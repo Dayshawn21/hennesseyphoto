@@ -74,7 +74,7 @@ export default function Home({ categories, images }) {
 
 export const getStaticProps = async () => {
   const client = new ApolloClient({
-    uri: GRAPH_URL,
+    uri: `${API_URL}/graphql`,
     cache: new InMemoryCache(),
   });
 

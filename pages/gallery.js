@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GRAPH_URL } from "../url/url";
+import { API_URL } from "../url/url";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { SRLWrapper } from "simple-react-lightbox";
 
@@ -78,7 +78,7 @@ const TagButton = ({ name, handleSetTag, tagActive }) => {
 
 export const getStaticProps = async () => {
   const client = new ApolloClient({
-    uri: GRAPH_URL,
+    uri: `${API_URL}/graphql`,
     cache: new InMemoryCache(),
   });
 
