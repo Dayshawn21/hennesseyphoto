@@ -24,7 +24,7 @@ const About = () => {
           The world without photography will be meaningless to us if there is no
           light and color, which opens up our minds and expresses passion. My
           photos are inspired by light, color, creative perspective, techniques
-          & personalities
+          and personalities
         </p>
         <br />
 

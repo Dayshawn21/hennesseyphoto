@@ -4,10 +4,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
-            href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
-            rel="stylesheet"
-          />
+          <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" />
         </Head>
         <body>
           <Main />

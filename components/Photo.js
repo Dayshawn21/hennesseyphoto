@@ -4,8 +4,6 @@ import { SRLWrapper } from "simple-react-lightbox";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Photo = ({ item }) => {
-  console.log(item);
-
   return (
     <div>
       <h1 className="text-center text-4xl text-yellow-800 pt-4">
