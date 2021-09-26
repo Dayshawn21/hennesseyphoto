@@ -14,6 +14,8 @@ const Testimonial = () => {
       "(max-width: 720px)": {
         loop: true,
         slidesPerView: 1,
+        loop: true,
+        mode: "free-snap",
       },
     },
   });
