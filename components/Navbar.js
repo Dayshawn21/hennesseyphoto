@@ -17,7 +17,7 @@ const Navbars = () => {
         <input className="menu-btn hidden" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon block cursor-pointer md:hidden px-2 py-3 relative select-none"
-          for="menu-btn"
+          htmlFor="menu-btn"
         >
           <span className="navicon bg-white flex items-center relative"></span>
         </label>
