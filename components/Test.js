@@ -7,15 +7,12 @@ const Testimonial = () => {
   const timer = useRef();
   const [sliderRef, slider] = useKeenSlider({
     slidesPerView: 3,
-    loop: true,
-    mode: "free",
+
     spacing: 10,
     breakpoints: {
       "(max-width: 720px)": {
         loop: true,
         slidesPerView: 1,
-        loop: true,
-        mode: "free",
       },
     },
   });
