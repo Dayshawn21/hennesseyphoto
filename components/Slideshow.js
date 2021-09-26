@@ -47,16 +47,16 @@ const Slideshow = () => {
     <>
       <div ref={sliderRef} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
-          <img src="image/girl.jpg" className="slide-image" alt="" srcset="" />
+          <img src="image/girl.jpg" className="slide-image" alt="" />
         </div>
         <div className="keen-slider__slide number-slide1">
-          <img src="image/guy.jpg" className="slide-image" alt="" srcset="" />
+          <img src="image/guy.jpg" className="slide-image" alt="" />
         </div>
         <div className="keen-slider__slide number-slide1">
-          <img src="image/guy2.jpg" className="slide-image" alt="" srcset="" />
+          <img src="image/guy2.jpg" className="slide-image" alt="" />
         </div>
         <div className="keen-slider__slide number-slide1">
-          <img src="image/nee.jpg" className="slide-image" alt="" srcset="" />
+          <img src="image/nee.jpg" className="slide-image" alt="" />
         </div>
       </div>
     </>
