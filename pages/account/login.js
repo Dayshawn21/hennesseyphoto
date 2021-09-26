@@ -71,20 +71,13 @@ const Login = () => {
               required
             />
 
-            <button
+            <input
               type="submit"
               className="w-full py-3 mt-10 bg-gray-800 rounded-sm
                     font-medium text-white uppercase
                     focus:outline-none hover:bg-gray-700 hover:shadow-none"
               value="Login"
-            >
-              Login
-            </button>
-            <div className=" mt-8 sm:mb-4 text-sm text-center">
-              <a href="forgot-password" className="underline text-center">
-                Forgot password?
-              </a>
-            </div>
+            />
           </form>
         </div>
       </div>
