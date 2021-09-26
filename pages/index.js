@@ -49,8 +49,8 @@ export default function Home({ categories, images }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
           integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
@@ -72,7 +72,7 @@ export default function Home({ categories, images }) {
   );
 }
 
-export const getStaticProps = async () => {
+export async function getServerSideProps() {
   const client = new ApolloClient({
     uri: `${API_URL}/graphql`,
     cache: new InMemoryCache(),
@@ -89,4 +89,4 @@ export const getStaticProps = async () => {
       images: images.galleries,
     },
   };
-};
+}

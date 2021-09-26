@@ -76,7 +76,7 @@ const TagButton = ({ name, handleSetTag, tagActive }) => {
   );
 };
 
-export const getStaticProps = async () => {
+export async function getServerSideProps() {
   const client = new ApolloClient({
     uri: `${API_URL}/graphql`,
     cache: new InMemoryCache(),
@@ -91,6 +91,6 @@ export const getStaticProps = async () => {
       images: images.galleries,
     },
   };
-};
+}
 
 export default Gallery;

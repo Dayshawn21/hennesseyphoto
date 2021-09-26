@@ -31,7 +31,7 @@ const Login = () => {
 
           <form className="mt-10" onSubmit={handleSubmit}>
             <label
-              for="email"
+              htmlFor="email"
               className="block text-xs font-semibold text-gray-600 uppercase"
             >
               E-mail
@@ -41,7 +41,7 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="E-mail address"
-              autocomplete="email"
+              autoComplete="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="block w-full py-3 px-1 mt-2 
@@ -51,7 +51,7 @@ const Login = () => {
               required
             />
             <label
-              for="password"
+              htmlFor="password"
               className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
             >
               Password
@@ -61,7 +61,7 @@ const Login = () => {
               type="password"
               name="password"
               placeholder="Password"
-              autocomplete="current-password"
+              autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="block w-full py-3 px-1 mt-2 mb-4
@@ -81,7 +81,7 @@ const Login = () => {
               Login
             </button>
             <div className=" mt-8 sm:mb-4 text-sm text-center">
-              <a href="forgot-password" class="underline text-center">
+              <a href="forgot-password" className="underline text-center">
                 Forgot password?
               </a>
             </div>
