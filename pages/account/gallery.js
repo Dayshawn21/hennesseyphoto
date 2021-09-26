@@ -4,12 +4,10 @@ import { API_URL } from "../../url/url";
 import Photo from "../../components/Photo";
 
 const Gallery = ({ customer }) => {
-  console.log(customer);
-
   return (
     <div className="bg-gray-800">
       {customer.map((item) => (
-        <Photo item={item} key={image.id} />
+        <Photo item={item} key={item} />
       ))}
     </div>
   );
