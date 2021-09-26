@@ -8,7 +8,7 @@ const Photo = ({ item }) => {
         {item.name} Photos
       </h1>
       <SRLWrapper>
-        <div className="container mx-auto py-4  md:grid grid-cols-4 gap-2  ">
+        <div className="container mx-auto sm:mx-5 py-4  md:grid grid-cols-4 gap-2  ">
           {item.photo.map((photos, index) => {
             return (
               <div key={index}>
