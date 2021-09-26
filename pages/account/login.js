@@ -1,5 +1,4 @@
 import React from "react";
-import { ToastContainer, toast } from "react-toastify";
 
 import { useState, useEffect, useContext } from "react";
 import AuthContext from "../../context/AuthContext";
@@ -7,8 +6,6 @@ import AuthContext from "../../context/AuthContext";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  useEffect(() => error && toast.error(error));
 
   const { login, error } = useContext(AuthContext);
 
