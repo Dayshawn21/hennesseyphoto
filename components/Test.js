@@ -5,13 +5,12 @@ import "keen-slider/keen-slider.min.css";
 const Testimonial = () => {
   const [pause, setPause] = useState(false);
   const timer = useRef();
-  const [sliderRef, slider] = useKeenSlider({
+  const [sliderRef] = useKeenSlider({
     slidesPerView: 3,
 
     spacing: 10,
     breakpoints: {
       "(max-width: 720px)": {
-        loop: true,
         slidesPerView: 1,
       },
     },
