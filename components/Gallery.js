@@ -3,7 +3,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 import Image from "next/image";
 
-const Gallery = ({ categories, images }) => {
+const Gallery = ({ images }) => {
   const [tag, setTag] = useState("all");
   const [filteredImages, setFilteredImages] = useState([]);
 
