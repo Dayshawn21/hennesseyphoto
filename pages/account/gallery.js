@@ -11,7 +11,7 @@ const Gallery = ({ customer }) => {
   return (
     <div className="bg-gray-800">
       {customer.map((item) => (
-        <Photo item={item} />
+        <Photo item={item} key={image.id} />
       ))}
     </div>
   );
