@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import Image from "next/image";
+
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Gallery from "../components/Gallery";
@@ -9,7 +9,6 @@ import { API_URL, GRAPH_URL } from "../url/url";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { Get_Categories, Get_Images } from "../queries/query";
 import Testimonial from "../components/Test";
-import Navbar from "../components/Navbar";
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 mapboxgl.accessToken =

@@ -1,5 +1,3 @@
-import { useState, useRef } from "react";
-import Image from "next/image";
 import { getCookie } from "../../helper/index";
 import React from "react";
 import { API_URL } from "../../url/url";

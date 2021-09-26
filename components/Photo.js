@@ -1,7 +1,5 @@
-import { useState } from "react";
 import Image from "next/image";
 import { SRLWrapper } from "simple-react-lightbox";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Photo = ({ item }) => {
   return (
