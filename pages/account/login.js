@@ -24,7 +24,7 @@ const Login = () => {
           <h2 className="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
             Login
           </h2>
-          <ToastContainer />
+
           <form className="mt-10" onSubmit={handleSubmit}>
             <label
               htmlFor="email"
