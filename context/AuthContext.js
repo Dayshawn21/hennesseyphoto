@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
+
 import { API_URL, NEXT_URL } from "../url/url";
 
 const AuthContext = createContext();
@@ -59,7 +60,7 @@ export const AuthProvider = ({ children }) => {
         user,
         login,
         logout,
-        loading,
+
         error,
         checkUserLoggedIn,
       }}

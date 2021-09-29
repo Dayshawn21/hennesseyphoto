@@ -1,5 +1,5 @@
 import React from "react";
-
+import { ToastContainer, toast } from "react-toastify";
 import { useState, useEffect, useContext } from "react";
 import AuthContext from "../../context/AuthContext";
 
@@ -7,7 +7,8 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { login } = useContext(AuthContext);
+  const { login, error } = useContext(AuthContext);
+  useEffect(() => error && toast.error(error));
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,7 +25,7 @@ const Login = () => {
           <h2 className="text-center font-semibold text-3xl lg:text-4xl text-gray-800">
             Login
           </h2>
-
+          <ToastContainer />
           <form className="mt-10" onSubmit={handleSubmit}>
             <label
               htmlFor="email"
