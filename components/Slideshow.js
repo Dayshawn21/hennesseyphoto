@@ -48,7 +48,7 @@ const Slideshow = ({ slideshows }) => {
   return (
     <div ref={sliderRef}>
       {slideshows.map((slideshow) => (
-        <div className="keen-slider">
+        <div key={slideshow} className="keen-slider">
           {slideshow.image.map((s, index) => (
             <div key={index} className="keen-slider__slide number-slide">
               <img src={s.url} className="slide-image" alt="" />
