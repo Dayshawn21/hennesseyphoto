@@ -8,7 +8,7 @@ function Slide({ slideshow }) {
     <div className="keen-slider__slide number-slide1">
       {slideshow.image.map((s, index) => {
         return (
-          <div>
+          <div key={index}>
             <img src={s.url} className="slide-image" alt="" />
           </div>
         );
