@@ -2,7 +2,7 @@ export const GRAPH_URL =
   process.env.NEXT_PUBLIC_GRAPH_URL || "http://localhost:1337/graphql";
 
 export const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337";
+  process.env.NEXT_PUBLIC_API_URL || "https://hennessyphoto.herokuapp.com";
 
 export const NEXT_URL =
   process.env.NEXT_PUBLIC_FRONTEND_URL || "http://localhost:3000";

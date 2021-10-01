@@ -35,3 +35,13 @@ export const Get_GalleyImages = gql`
     }
   }
 `;
+
+export const Get_Slideshow = gql`
+  query Slideshow {
+    slideshows {
+      image {
+        url
+      }
+    }
+  }
+`;

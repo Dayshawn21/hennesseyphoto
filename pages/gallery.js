@@ -46,13 +46,13 @@ const Gallery = ({ categories, images }) => {
           />
         </div>
         <SRLWrapper>
-          <div className=" grid grid-cols-2 md:grid-cols-3 gap-4 py-4  ">
+          <div className=" grid grid-cols-2 md:grid-cols-4 gap-2 py-4   ">
             {filteredImages.map((image) => (
-              <div key={image.id}>
+              <div key={image.id} className="h-64 w-auto relative">
                 <Image
                   src={image.images.url}
-                  width={350}
-                  height={250}
+                  layout="fill"
+                  objectFit="contain"
                   alt={image.name}
                   srl_gallery_image="true"
                 />

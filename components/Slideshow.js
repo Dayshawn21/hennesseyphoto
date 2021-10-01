@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import Slide from "./Slide";
 
-const Slideshow = () => {
+const Slideshow = ({ slideshows }) => {
+  console.log(slideshows);
   const [pause, setPause] = useState(false);
   const timer = useRef();
   const [sliderRef, slider] = useKeenSlider({
-    slidesPerView: 2,
+    slidesPerView: 3,
     loop: true,
     duration: 1000,
     breakpoints: {
@@ -44,22 +46,17 @@ const Slideshow = () => {
   }, [pause, slider]);
 
   return (
-    <>
-      <div ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide number-slide1">
-          <img src="image/girl.jpg" className="slide-image" alt="" />
+    <div ref={sliderRef}>
+      {slideshows.map((slideshow) => (
+        <div className="keen-slider">
+          {slideshow.image.map((s, index) => (
+            <div className="keen-slider__slide number-slide">
+              <img src={s.url} className="slide-image" alt="" />
+            </div>
+          ))}
         </div>
-        <div className="keen-slider__slide number-slide1">
-          <img src="image/guy.jpg" className="slide-image" alt="" />
-        </div>
-        <div className="keen-slider__slide number-slide1">
-          <img src="image/guy2.jpg" className="slide-image" alt="" />
-        </div>
-        <div className="keen-slider__slide number-slide1">
-          <img src="image/nee.jpg" className="slide-image" alt="" />
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
 };
 

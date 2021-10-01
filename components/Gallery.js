@@ -4,6 +4,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 import Image from "next/image";
 
 const Gallery = ({ images }) => {
+  console.log(images);
   const [tag, setTag] = useState("all");
   const [filteredImages, setFilteredImages] = useState([]);
 
@@ -43,13 +44,13 @@ const Gallery = ({ images }) => {
           />
         </div>
         <SRLWrapper>
-          <div className=" grid grid-cols-2 md:grid-cols-4 gap-4 py-4  ">
+          <div className=" grid grid-cols-2 md:grid-cols-4 gap-2 py-4   ">
             {filteredImages.map((image) => (
-              <div key={image.id}>
+              <div key={image.id} className="h-64 w-auto relative">
                 <Image
                   src={image.images.url}
-                  width={250}
-                  height={250}
+                  layout="fill"
+                  objectFit="contain"
                   alt={image.name}
                   srl_gallery_image="true"
                 />

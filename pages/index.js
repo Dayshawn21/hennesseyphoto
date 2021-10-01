@@ -7,14 +7,14 @@ import Gallery from "../components/Gallery";
 import Slideshow from "../components/Slideshow";
 import { API_URL, GRAPH_URL } from "../url/url";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
-import { Get_Categories, Get_Images } from "../queries/query";
+import { Get_Categories, Get_Images, Get_Slideshow } from "../queries/query";
 import Testimonial from "../components/Test";
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZGF5c2hhd24yMSIsImEiOiJja3Nqczgydm8wMGR0Mm9uMGZra3dsdWQ4In0.SRJo_b_HZGiN3EtvqSA4aw";
 
-export default function Home({ categories, images }) {
+export default function Home({ categories, images, slideshows }) {
   const [pageIsMounted, setPageIsMounted] = useState(false);
   const [lng, setLng] = useState(-121.49);
   const [lat, setLat] = useState(38.57);
@@ -57,7 +57,7 @@ export default function Home({ categories, images }) {
         />
       </Head>
 
-      <Slideshow />
+      <Slideshow slideshows={slideshows} />
       <About />
       <Gallery categories={categories} images={images} />
       <Testimonial />
@@ -79,6 +79,7 @@ export async function getServerSideProps() {
 
   const { data } = await client.query({ query: Get_Categories }); // Get categories
   const { data: images } = await client.query({ query: Get_Images }); // Get images
+  const { data: slideshows } = await client.query({ query: Get_Slideshow }); // Get images
 
   // return Products
 
@@ -86,6 +87,7 @@ export async function getServerSideProps() {
     props: {
       categories: data.categories,
       images: images.galleries,
+      slideshows: slideshows.slideshows,
     },
   };
 }

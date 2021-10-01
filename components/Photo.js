@@ -8,15 +8,15 @@ const Photo = ({ item }) => {
         {item.name} Photos
       </h1>
       <SRLWrapper>
-        <div className="container mx-auto sm:mx-4 py-4  md:grid grid-cols-4 gap-2  ">
+        <div className="container sm:mx-4 py-4  md:grid grid-cols-4 gap-2  ">
           {item.photo.map((photos, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="h-64 w-auto relative">
                 <Image
                   src={photos.url}
                   alt={item.name}
-                  width={300}
-                  height={250}
+                  layout="fill"
+                  objectFit="contain"
                   srl_gallery_image="true"
                 />
               </div>
