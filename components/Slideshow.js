@@ -50,7 +50,7 @@ const Slideshow = ({ slideshows }) => {
       {slideshows.map((slideshow) => (
         <div className="keen-slider">
           {slideshow.image.map((s, index) => (
-            <div className="keen-slider__slide number-slide">
+            <div key={index} className="keen-slider__slide number-slide">
               <img src={s.url} className="slide-image" alt="" />
             </div>
           ))}
