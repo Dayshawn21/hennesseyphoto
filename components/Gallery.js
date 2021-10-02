@@ -28,23 +28,23 @@ const Gallery = ({ images }) => {
             handleSetTag={setTag}
           />{" "}
           <TagButton
-            name="Family"
+            name="Men"
             tagActive={tag === "Family" ? true : false}
             handleSetTag={setTag}
           />{" "}
           <TagButton
-            name="Portraits"
+            name="Women"
             tagActive={tag === "Portraits" ? true : false}
             handleSetTag={setTag}
           />{" "}
           <TagButton
-            name="Sports"
+            name="Children"
             tagActive={tag === "Sports" ? true : false}
             handleSetTag={setTag}
           />
         </div>
         <SRLWrapper>
-          <div className=" grid grid-cols-2 md:grid-cols-4 gap-2 py-4   ">
+          <div className=" grid  md:grid-cols-4 gap-2 py-4   ">
             {filteredImages.map((image) => (
               <div key={image.id} className="h-64 w-auto relative">
                 <Image

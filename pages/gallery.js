@@ -30,23 +30,23 @@ const Gallery = ({ categories, images }) => {
             handleSetTag={setTag}
           />{" "}
           <TagButton
-            name="Family"
-            tagActive={tag === "Family" ? true : false}
+            name="Men"
+            tagActive={tag === "Men" ? true : false}
             handleSetTag={setTag}
           />{" "}
           <TagButton
-            name="Portraits"
-            tagActive={tag === "Portraits" ? true : false}
+            name="Women"
+            tagActive={tag === "Women" ? true : false}
             handleSetTag={setTag}
           />{" "}
           <TagButton
-            name="Sports"
-            tagActive={tag === "Sports" ? true : false}
+            name="Children"
+            tagActive={tag === "Children" ? true : false}
             handleSetTag={setTag}
           />
         </div>
         <SRLWrapper>
-          <div className=" grid grid-cols-2 md:grid-cols-4 gap-2 py-4   ">
+          <div className=" grid md:grid-cols-4 gap-2 py-4   ">
             {filteredImages.map((image) => (
               <div key={image.id} className="h-64 w-auto relative">
                 <Image

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className=" py-10 grid md:grid-cols-2 bg-gray-800  justify-items-center  text-white ">
       <div>
-        <Image src="/image/hen.jpg" width={500} height={500} />
+        <Image src="/image/hen.jpg" width={500} height={400} />
       </div>
 
       <div className=" container mx-auto py-6">
