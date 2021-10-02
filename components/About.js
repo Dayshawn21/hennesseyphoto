@@ -3,11 +3,11 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className=" py-10 grid md:grid-cols-2 gap-1 justify-items-center content-center bg-black text-white">
-      <div className="h-84 w-96 relative">
+      <div>
         <Image
           src="/image/hen.jpg"
-          layout="fill" // required
-          objectFit="cover"
+          width={500}
+          height={400}
           className="rounded-full"
         />
       </div>
