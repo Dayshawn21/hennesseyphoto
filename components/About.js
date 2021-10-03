@@ -14,7 +14,7 @@ const About = () => {
 
       <div className="content-center container py-6">
         <h2 className="text-yellow-800 text-lg">About Me</h2>
-        <h1 className="text-4xl"> My Name is Hennessey Williams</h1>
+        <h1 className="text-4xl"> My Name is Hennessy Williams</h1>
         <h1 className="text-4xl">
           I am a <span className="text-yellow-800"> Photographer</span>
         </h1>

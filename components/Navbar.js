@@ -10,7 +10,7 @@ const Navbars = () => {
         <div className="flex flex-no-shrink items-center py-1  text-grey-darkest">
           <Link href={`/`}>
             <a>
-              <h1>Hennessey Photos </h1>
+              <h1>Hennessy Williams Photography</h1>
             </a>
           </Link>
         </div>

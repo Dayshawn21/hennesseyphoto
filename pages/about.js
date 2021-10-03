@@ -9,7 +9,7 @@ const About = () => {
       </div>
 
       <div className=" container mx-auto py-6">
-        <h1 className="text-4xl"> My Name is Hennessey Williams</h1>
+        <h1 className="text-4xl"> My Name is Hennessy Williams</h1>
         <h1 className="text-4xl">
           I am a <span className="text-yellow-800"> Photographer</span>
         </h1>

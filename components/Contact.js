@@ -17,19 +17,41 @@ const Contact = () => {
         </div>
         <div className="  flex items-center">
           <Image width={30} height={30} src="/image/email.png" />
-          <h2 className="pl-2"> Hennessywilliamsphoto@gmail.com</h2>
+          <a
+            href="mailto: Hennessywilliamsphoto@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <h2 className="pl-2"> Hennessywilliamsphoto@gmail.com</h2>
+          </a>
         </div>
         <div className=" flex  items-center">
           <Image width={30} height={30} src="/image/phone.png" />
-          <h2 className="pl-2">773-997-0423</h2>
+          <a href="tel:+7739970423" rel="noopener noreferrer" target="_blank">
+            <h2 className="pl-2">773-997-0423</h2>
+          </a>
         </div>
         <div className=" flex  items-center">
           <Image width={30} height={30} src="/image/facebook.png" />
-          <h2 className="pl-2">hennessywilliamsphoto</h2>
+
+          <a
+            href="https://www.facebook.com/hennessywilliamsphotography/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {" "}
+            <h2 className="pl-2">hennessywilliamsphoto</h2>
+          </a>
         </div>
         <div className=" flex  items-center">
           <Image width={30} height={30} src="/image/instagram.png" />
-          <h2 className="pl-2">hennessywilliamsphoto</h2>
+          <a
+            href="https://www.instagram.com/hennessywilliamsphoto"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <h2 className="pl-2">hennessywilliamsphoto</h2>
+          </a>
         </div>
       </div>
     </div>
