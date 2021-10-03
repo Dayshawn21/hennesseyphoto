@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <div className=" flex  items-center">
           <Image width={30} height={30} src="/image/phone.png" />
-          <a href="tel:+7739970423" rel="noopener noreferrer" target="_blank">
+          <a href="tel:+17739970423" rel="noopener noreferrer" target="_blank">
             <h2 className="pl-2">773-997-0423</h2>
           </a>
         </div>

@@ -24,7 +24,11 @@ const Footer = () => {
             </a>
           </div>
           <div className="px-2">
-            <a href="tel:+7739970423" rel="noopener noreferrer" target="_blank">
+            <a
+              href="tel:+17739970423"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <Image width={30} height={30} src="/image/phone.png" />
             </a>
           </div>
