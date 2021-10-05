@@ -9,6 +9,7 @@ import { API_URL, GRAPH_URL } from "../url/url";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { Get_Categories, Get_Images, Get_Slideshow } from "../queries/query";
 import Testimonial from "../components/Test";
+import timekit from "timekit-sdk";
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 mapboxgl.accessToken =
@@ -38,6 +39,14 @@ export default function Home({ categories, images, slideshows }) {
     // Clean up on unmount
     return () => map.remove();
   }, []);
+  useEffect(() => {
+    var xhr = new XMLHttpRequest();
+    xhr.open(
+      "GET",
+      "https://10to8.com/pub-api/book-now-button/d389082e-debc-4cc8-a817-8e0b70f74c6e/"
+    );
+    xhr.send();
+  }, []);
   return (
     <div>
       <Head>
@@ -55,6 +64,14 @@ export default function Home({ categories, images, slideshows }) {
           href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
           rel="stylesheet"
         />
+        <script
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+          defer
+        ></script>
+        <script
+          src="https://cdn.timekit.io/booking-js/v2/booking.min.js"
+          defer
+        ></script>
       </Head>
 
       <Slideshow slideshows={slideshows} />
@@ -90,4 +107,4 @@ export const getStaticProps = async () => {
       slideshows: slideshows.slideshows,
     },
   };
-}
+};
