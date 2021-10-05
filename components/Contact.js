@@ -57,6 +57,7 @@ const Contact = () => {
           <a
             href="https://10to8.com/book/d389082e-debc-4cc8-a817-8e0b70f74c6e/uuid/"
             target="_blank"
+            rel="noopener noreferrer"
             className="p-2 pl-5 pr-5 bg-black text-gray-100 text-lg rounded-lg focus:border-4 border-gray-300"
           >
             {" "}
