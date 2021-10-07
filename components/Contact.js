@@ -67,7 +67,7 @@ const Contact = () => {
 
         <div className=" flex  items-center">
           <a
-            class="appointlet-button"
+            className="appointlet-button"
             data-appointlet-modal
             href="https://appt.link/dayshawn-terrys-meetings-hkbbcmga"
             style={{ backgroundColor: "#1e9bff" }}
