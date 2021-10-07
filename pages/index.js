@@ -9,7 +9,6 @@ import { API_URL, GRAPH_URL } from "../url/url";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { Get_Categories, Get_Images, Get_Slideshow } from "../queries/query";
 import Testimonial from "../components/Test";
-import timekit from "timekit-sdk";
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 mapboxgl.accessToken =
@@ -20,6 +19,7 @@ export default function Home({ categories, images, slideshows }) {
   const [lng, setLng] = useState(-121.49);
   const [lat, setLat] = useState(38.57);
   const [zoom, setZoom] = useState(10);
+
   useEffect(() => {
     setPageIsMounted(true);
     const map = new mapboxgl.Map({
@@ -64,14 +64,10 @@ export default function Home({ categories, images, slideshows }) {
           href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
           rel="stylesheet"
         />
-        <script
-          src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-          defer
-        ></script>
-        <script
-          src="https://cdn.timekit.io/booking-js/v2/booking.min.js"
-          defer
-        ></script>
+        <link
+          href="https://js.appointlet.com/styles.css"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <Slideshow slideshows={slideshows} />

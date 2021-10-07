@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
         <Component {...pageProps} />
       </SimpleReactLightbox>
+
       <Footer />
     </AuthProvider>
   );

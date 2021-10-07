@@ -64,6 +64,19 @@ const Contact = () => {
             Book Now{" "}
           </a>
         </div>
+
+        <div className=" flex  items-center">
+          <a
+            class="appointlet-button"
+            data-appointlet-modal
+            href="https://appt.link/dayshawn-terrys-meetings-hkbbcmga"
+            style={{ backgroundColor: "#1e9bff" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule a time
+          </a>
+        </div>
       </div>
     </div>
   );

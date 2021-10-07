@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.4.10",
+    "@appointlet/appointlet.js": "^3.0.7",
     "cookie": "^0.4.1",
     "framer-motion": "^4.1.17",
     "graphql": "^15.5.1",
